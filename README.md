@@ -47,7 +47,7 @@ in `opencode.json` under `agent.pdf-vision-agent.model`:
 Recommended vision models available through OpenRouter:
 
 | Model | Context | Price (per 1M tok) | Notes |
-|---|---|---|---|---|
+|---|---|---|---|
 | `xiaomi/mimo-v2.5` | 1M | $0.14/$0.28 | Best cost/perception, native omnimodal, Apr 2026 |
 | `qwen/qwen3.5-flash-02-23` | 1M | $0.065/$0.26 | Fast vision-language MoE, Feb 2026 |
 | `google/gemini-2.5-flash-lite` | 1M | $0.10/$0.40 | Lightweight reasoning, optional thinking, Jul 2025 |
