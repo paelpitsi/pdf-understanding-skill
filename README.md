@@ -38,21 +38,21 @@ in `opencode.json` under `agent.pdf-vision-agent.model`:
 {
   "agent": {
     "pdf-vision-agent": {
-      "model": "google/gemini-3-flash"
+      "model": "google/gemini-2.5-flash"
     }
   }
 }
 ```
 
-Recommended vision models available through OpenCode Zen:
+Recommended vision models available through OpenRouter:
 
-| Model | MMMU Pro | Context | Notes |
-|---|---|---|---|
-| `google/gemini-3-flash` | 79% | 1M | Best balance of cost, speed and vision accuracy |
-| `google/gemini-2.5-flash` | — | 1M | Reliable fallback, already in the skill |
-| `openai/gpt-5.2-codex` | 75% | 400K | Strong coding + vision in one model |
-| `kimi/k2.6` | 79.4% | 256K | Good open-source option for document analysis |
-| `minimax/m3` | — | 1M | New multimodal model, strong on structured data |
+| Model | Context | Price (per 1M tok) | Notes |
+|---|---|---|---|---|
+| `xiaomi/mimo-v2.5` | 1M | $0.14/$0.28 | Best cost/perception, native omnimodal, Apr 2026 |
+| `qwen/qwen3.5-flash-02-23` | 1M | $0.065/$0.26 | Fast vision-language MoE, Feb 2026 |
+| `google/gemini-2.5-flash-lite` | 1M | $0.10/$0.40 | Lightweight reasoning, optional thinking, Jul 2025 |
+| `openai/gpt-4o-mini` | 128K | $0.15/$0.60 | MMLU 82%, small & reliable, Jul 2024 |
+| `openai/gpt-5-nano` | 400K | $0.05/$0.40 | Ultra-low latency, smallest GPT-5, Aug 2025 |
 
 Higher-end models (`claude-opus-4.7`, `gemini-3-pro`) also work
 but cost more than needed for PDF analysis.
